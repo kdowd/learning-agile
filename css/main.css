@@ -78,10 +78,6 @@ body p {
   z-index: 1000;
 }
 
-.hero-image {
-  /* max-height: fit-content; */
-}
-
 .coda {
   max-width: 80%;
   margin: auto;
