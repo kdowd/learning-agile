@@ -41,6 +41,10 @@ body p {
   color: var(--text-black);
 }
 
+.hero-image {
+  max-width: 100%;
+}
+
 .sub-heading {
   color: gray;
 }
