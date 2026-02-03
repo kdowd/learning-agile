@@ -11,3 +11,5 @@ function toTheTop() {
 
 const fastNav = document.querySelector('.fast-nav');
 fastNav.addEventListener('click', toTheTop);
+
+
