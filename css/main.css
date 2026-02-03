@@ -11,7 +11,7 @@ html {
 body {
   background-color: var(--site-background);
   color: var(--generic-black);
-  margin: 0;
+  margin: 0 1.6rem;
   padding: 0;
   box-sizing: border-box;
   font-family:
@@ -84,7 +84,7 @@ body p {
 }
 
 .summary {
-  max-width: 70ch;
+  max-width: 58ch;
   font-size: 1.6rem;
   line-height: 2.2rem;
 }
