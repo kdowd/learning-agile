@@ -43,6 +43,9 @@ body p {
 
 .hero-image {
   max-width: 100%;
+  /*  for pt's */
+  backface-visibility: hidden;
+  transform: translateZ(0) scale(1, 1);
 }
 
 .sub-heading {
