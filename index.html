@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>Document</title>
+		<link rel="stylesheet" href="./css/main.css" />
+
+		<script
+			type="module"
+			src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.esm.js"></script>
+	</head>
+
+	<body>
+		<header>
+			<h1>The 12 Agile Priciples</h1>
+		</header>
+
+		<div class="principles-grid">
+			Agile teams keep their solutions as simple as possible by avoiding building unnecessary features or overly complex
+			software (Principle #10). Self-organizing teams share responsibility for all aspects of the project, from
+			conceiving the product to project management to design and implementation (Principle #11). By taking the time to
+			look back and talk about lessons they learned after each iteration and also at the end of the project, agile teams
+			constantly get better at building software (Principle #12).
+		</div>
+	</body>
+
+	<script>
+		var temp = document.querySelector('.my-toggle');
+
+		temp.addEventListener('fwChange', (evt) => {
+			console.log(evt.detail.checked);
+
+			if (evt.detail.checked) {
+				document.querySelector('fw-accordion').classList.toggle('hide-accordion');
+			} else {
+				document.querySelector('fw-accordion').classList.toggle('hide-accordion');
+			}
+		});
+	</script>
+</html>

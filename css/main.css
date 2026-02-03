@@ -1,0 +1,54 @@
+html {
+	anchor-name: --main-body-anchor;
+}
+
+body {
+	background-color: #f7fbfe;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: monospace;
+	display: grid;
+	grid-template-columns: 1fr;
+	place-items: center;
+}
+
+.my-toggle {
+	padding: 20px 0;
+	display: flex;
+	align-items: center;
+	gap: 18px;
+}
+
+.hide-accordion {
+	display: none;
+}
+
+.principles-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+	gap: 16px;
+}
+
+.fast-nav {
+	position: fixed;
+	bottom: 16px;
+	right: 16px;
+	background: #fff;
+	border: 1px solid #eee;
+	border-radius: 4px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+	padding: 8px 12px;
+	z-index: 1000;
+}
+
+/* area {
+	position: relative;
+}
+area[title]:hover::after {
+	background-color: crimson;
+	content: attr(title);
+	position: absolute;
+	top: -100%;
+	left: 0;
+} */
