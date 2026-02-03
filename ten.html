@@ -1,26 +1,61 @@
-Principle #10: Simplicity—the Art of Maximizing the Amount of Work Not Done—Is Essential. Adding code to an existing
-project often makes it more complex, especially when you then add even more code that depends on it. Dependencies
-between systems, objects, services, etc., make code more complex and difficult to change: the dependencies increase the
-likelihood of one change cascading out to another part of the system, which then requires changes to a third part of the
-system, creating a domino effect of increasing complexity for every change. Using iteration and building the minimal
-documentation at the start of the project helps your team avoid delivering unnecessary software. However, a lot of
-developers feel a little uncomfortable when they first hear phrases like “use iterative development,” and “do the
-minimal amount of planning needed to start the project.” They feel like it’s too early to start the code for a project
-until they’ve made a lot of the design and architecture decisions and written them down—otherwise the team will write
-code today that they’ll need remove tomorrow when the design changes. This is an understandable reaction, because for
-many projects outside the realm of software development, this wouldn’t make sense. It’s not uncommon for a programmer
-who’s new to agile to raise an objection like this: “If I’m having a contractor renovate my house, I want to see the
-complete blueprints first. I don’t want him to have a quick discussion with me, and then start knocking down my walls.”
-This argument makes sense for home renovation. The reason is that when you’re making a change to a house, the most
-destructive thing you can do is pick up a sledgehammer and break down a wall. But software projects are different from
-houses or other physical objects. Deleting code is not particularly destructive, because you can usually just recover it
-from the version control system. The most destructive thing you can do to your project is to build new code, and then
-build more code that depends on it, and then still more code that depends on that, leading to that painfully familiar
-domino effect of cascading changes...and eventually leaving you with an unmaintainable mess of spaghetti code.
-Maximizing the amount of work not done means avoiding this mess—and the best way to do this is by building systems that
-don’t have a lot of dependencies and unnecessary code. The most effective way to do this is to work with your customers
-and stakeholders to only build the most useful and valuable software. If a feature is not valuable, it’s often cheaper
-for the company in the long run to not build it at all, because the cost of maintaining the additional code is actually
-higher than the value it delivers to the company. When teams write code, they can keep their software designs simple by
-creating software designs based on small, self-contained units (like classes, modules, services, etc.) that do only one
-thing; this helps avoid the domino effect.6
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>12 Agile</title>
+
+    <link rel="stylesheet" href="./css/main.css" />
+    <script defer src="./js/main.js"></script>
+</head>
+
+<body>
+    <header>
+        <a targe="_self" href="./index.html"><img src="./images/agile.png" alt="logo"></a>
+    </header>
+
+
+
+    <main>
+        <h2>Principle #9:</h2>
+        <h4 class="sub-heading">Maximize the amount of work not done - Simple is best.</h4>
+        <p class="summary">
+            The tenth Agile principle highlights "Simplicity—the art of maximizing the amount of work not done—is
+            essential." This
+            principle addresses the inherent complexity introduced by adding code and
+            its dependencies, which can lead to a cascading effect of changes and an unmaintainable codebase. Agile
+            advocates for
+            minimal planning and iterative development to avoid building unnecessary
+            software. While this might initially seem counterintuitive to developers accustomed to comprehensive upfront
+            design,
+            software development differs from physical construction. Deleting code is
+            less destructive than building an overly complex system. Maximizing work not done means focusing on building
+            only the
+            most valuable and useful features, as the cost of maintaining unnecessary
+            code often outweighs its value. Effective simplicity is achieved by creating software with small,
+            self-contained units
+            that minimize dependencies, thereby preventing complex cascading changes
+            and promoting long-term maintainability.
+        </p>
+
+    </main>
+
+    <footer class="fast-nav">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+            <g fill="none">
+                <path fill="#00a6ed" d="M2 6a4 4 0 0 1 4-4h20a4 4 0 0 1 4 4v20a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z" />
+                <path fill="#fff"
+                    d="M15.307 7.667a1 1 0 0 1 1.386 0l5.313 5.113c.649.624.207 1.72-.693 1.72H18.25a.25.25 0 0 0-.25.25v9.75a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-9.75a.25.25 0 0 0-.25-.25h-3.063c-.9 0-1.342-1.096-.693-1.72z" />
+            </g>
+        </svg>
+    </footer>
+</body>
+
+</html>
+
+<!-- 
+		<script
+			type="module"
+			src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.esm.js">
+		</script> -->
