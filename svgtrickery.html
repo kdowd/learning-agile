@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: 'helvetica neue', 'helvetica', system-ui, sans-serif;
+      }
+
+      .wrapper {
+        max-width: 72rem;
+        margin: 0 auto;
+        padding: 3rem 2rem;
+      }
+
+      .hero {
+        position: relative;
+        display: flex;
+        flex-flow: row nowrap;
+        filter: url('#goo');
+      }
+
+      h1 {
+        position: relative;
+        z-index: 10;
+        width: 60%;
+        font-size: 4rem;
+        line-height: 1;
+        display: flex;
+        flex-flow: row wrap;
+        padding-top: 5rem;
+        padding-left: 1rem;
+        filter: url('#goo');
+      }
+
+      h1 span {
+        text-transform: uppercase;
+        background-color: #fff;
+        padding: 1rem;
+        border-radius: 1rem;
+        margin-top: -1rem;
+        margin-left: -1rem;
+      }
+
+      .image {
+        position: absolute;
+        right: 0px;
+        width: 85%;
+        aspect-ratio: 1/1;
+        background-color: #dfe3e4;
+        border-radius: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="hero">
+        <h1><span>Where</span> <span>your</span> <span>mental</span> <span>health</span> <span>flourishes</span></h1>
+
+        <div class="image"></div>
+      </div>
+    </div>
+
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+      <defs>
+        <filter id="goo">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+          <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+          <feBlend in="SourceGraphic" in2="goo" />
+        </filter>
+      </defs>
+    </svg>
+  </body>
+</html>
